@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js" integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	
+
+	<header>
+		
+		<img src="img/university.jpg" alt="university_image">
+
+		<div class="headbar flex hitems_between">
+
+			<div class="logo">
+
+				<a href="#" class="flex">
+					
+				<i class="fa-solid fa-graduation-cap graduate"></i>
+
+				<h3>Knowford</h3>
+
+				</a>
+
+			</div>
+
+			<nav>
+				<a href="#">HOME</a>
+				<a href="#">ABOUT</a>
+				<a href="#">COURSE</a>
+				<a href="#">BLOG</a>
+				<a href="#">CONTACT</a>
+			</nav>
+
+			<i class="fa-solid fa-bars" class="mobile_menu" id="open_menu" onclick="togglemenu()"></i>
+
+			<div class="menu_options">
+				
+				<i class="fa-solid fa-xmark" id="close_menu" onclick="togglemenu()"></i>
+
+				<div class="options">
+					<a href="#">HOME</a>
+					<a href="#">ABOUT</a>
+					<a href="#">COURSE</a>
+					<a href="#">BLOG</a>
+					<a href="#">CONTACT</a>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="hero flex hitems_center">
+			
+			<h1>World's Biggest <span>University</span></h1>
+
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam libero sequi reprehenderit ut, unde omnis ipsum qui enim. Culpa nam eveniet temporibus autem.</p>
+
+			<button class="btn">Learn More</button>
+
+		</div>
+
+	</header>
+
+
+	<section class="about flex">
+
+			<div class="details_part flex">
+				
+				<div class="head">
+					
+					<h1>Courses We Offer</h1>
+
+					<p>Lorem ipsum dolor, sit amet consectetur</p>
+
+				</div>
+
+				<div class="cards">
+					
+
+					<div class="card_data">
+						<h3>Intermediate</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, accusamus itaque provident ducimus maiores, ipsam voluptate ratione adipisci eaque facere quibusdam, esse officia voluptatibus quis! Aperiam eaque id officia, laborum?</p>
+					</div>
+
+					<div class="Degree card_data">
+						<h3>Intermediate</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, accusamus itaque provident ducimus maiores, ipsam voluptate ratione adipisci eaque facere quibusdam, esse officia voluptatibus quis! Aperiam eaque id officia, laborum?</p>
+					</div>
+
+					<div class="Graduation card_data">
+						<h3>Intermediate</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, accusamus itaque provident ducimus maiores, ipsam voluptate ratione adipisci eaque facere quibusdam, esse officia voluptatibus quis! Aperiam eaque id officia, laborum?</p>
+					</div>
+
+				</div>
+
+			</div>
+
+
+
+			<div class="details_part flex">
+				
+				<div class="head">
+					
+					<h1>Our Global campus</h1>
+
+					<p>Lorem ipsum dolor, sit amet consectetur</p>
+
+				</div>
+
+				<div class="campus cards">
+					
+					<div class="london card_data">
+						<div class=" cdata">
+							<h3>LONDON</h3>
+						</div>
+					</div>
+
+					<div class="newyork card_data ">
+
+						<div class=" cdata">
+							<h3>NEW YORK</h3>
+						</div>
+					</div>
+
+					<div class="italy card_data">
+						<div class="cdata">
+							<h3>ITALY</h3>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+	</section>
+
+	<section class="contact_us">
+
+		<img src="img/contact.jpg" >
+
+		<div class="contact_data flex hitems_center">
+			<h1>Enroll For Our Various Online Courses<br>Anywhere From The World</h1>
+			<button class="btn">Contact US</button>
+			
+		</div>
+		
+	</section>
+
+
+	<footer class="flex">
+		
+		<div class="social_links">
+			
+			<i class="fa-brands fa-facebook-f"></i>
+			<i class="fa-brands fa-twitter"></i>
+			<i class="fa-brands fa-linkedin-in"></i>
+
+		</div>
+
+
+	</footer>
+
+
+	<script>
+		
+		let menus=document.querySelector(".menu_options");
+		
+		menus.style.maxWidth="0px";
+
+		function togglemenu()
+		{
+			if(menus.style.maxWidth=="0px")
+			{
+				menus.style.maxWidth="60vw";
+			}
+			else
+			{
+				menus.style.maxWidth="0px";
+			}
+			console.log(menus.style.maxWidth)
+		}
+
+
+	</script>
+
+	
+
+</body>
+
+
+</html>

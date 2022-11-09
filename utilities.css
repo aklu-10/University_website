@@ -1,0 +1,20 @@
+.flex
+{
+	display: flex;
+}
+
+.hitems_center
+{
+	justify-content:center; 
+}
+
+.hitems_around
+{
+	justify-content:space-around; 
+}
+
+.hitems_between
+{
+	justify-content:space-between; 
+}
+
