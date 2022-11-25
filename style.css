@@ -129,6 +129,8 @@ header .headbar .menu_options
 	width: 0px;
 	transition: all .5s ease;
 	overflow: hidden;
+        z-index:10;
+        position:relative;
 }
 
 header .headbar #open_menu
